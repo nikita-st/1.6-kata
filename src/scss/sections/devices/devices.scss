@@ -1,0 +1,47 @@
+.devices-repair__item {
+	min-width: 240px;
+	background-color: #FFFFFF;
+	border-radius: 6px;
+	box-sizing: border-box;
+}
+.devices-repair__link {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    height: 160px;
+	padding: 15px;
+	border: 1px solid #EAEAEA;
+	border-radius: 6px;
+	transition: all 0.1s ease-in-out;
+	&:hover {
+		box-shadow: inset 0 0 5px 1px rgb(65, 246, 215);
+	}
+	img {
+		align-self: flex-end;
+        &:last-child {
+			padding: 12px 14px;
+			border: 2px solid #FF3E79;
+			border-radius: 50%;
+		}
+	}
+}
+.devices-repair__description {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+@media (min-width: 768px) {
+	.devices-repair__item {
+		min-width: 224px;
+	}
+	.swiper-pagination {
+		margin: 0;
+	}
+}
+
+@media (min-width: 1120px) {
+	.devices-repair__item {
+		min-width: 240px;
+	}
+}
